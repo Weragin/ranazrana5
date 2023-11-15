@@ -22,7 +22,7 @@ def encrypt(path_input: str, path_output: str, first_shift: int):
 def decrypt(path_input: str, path_output: str):
     file_read = open(path_input, mode="r")
     file_write = open(path_output, mode="a")
-    a = ord(a)
+    a = ord("a")
 
     for line in file_read.readlines():
         shift = a - ord(line[0]) - 1
